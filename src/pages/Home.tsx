@@ -69,26 +69,26 @@ const Home = () => {
             </CardContainer>
             <div className="z-10 flex justify-center items-center h-[40rem] flex-col px-4">
                 <p className="text-neutral-500 dark:text-neutral-400 text-xl md:text-3xl max-w-3xl mx-auto mb-10">
-                    <LinkPreview url="http://setrain.top" className="font-bold">
-                        Tailwind CSS
+                    <LinkPreview url="https://www.setrain.top" className="font-bold">
+                        我的简历
                     </LinkPreview>
     
                     {" "}
-                    and{" "}
-                    <LinkPreview url="https://framer.com/motion" className="font-bold">
-                        Framer Motion
+                    和{" "}
+                    <LinkPreview url="https://www.setrain.top/blog" className="font-bold">
+                        我的博客
                     </LinkPreview>{" "}
-                    are a great way to build modern websites.
+                    是我在学习和生活中的重要记录，希望你能从中找到一些有价值的信息。
                 </p>
                 <p className="text-neutral-500 dark:text-neutral-400 text-xl md:text-3xl max-w-3xl mx-auto">
-                    Visit{" "}
+                    访问我的{" "}
                     <LinkPreview
-                        url="https://ui.aceternity.com"
+                        url="https://www.github.com/2Stephen"
                         className="font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 to-pink-500"
                     >
-                        Aceternity UI
+                        Github首页
                     </LinkPreview>{" "}
-                    for amazing Tailwind and Framer Motion components.
+                    了解更多关于我的信息
                 </p>
             </div>
         </>
