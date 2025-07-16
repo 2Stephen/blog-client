@@ -6,6 +6,7 @@ import {
   motion,
 } from "motion/react";
 import React, { useEffect, useRef, useState } from "react";
+import { TypingAnimation } from "@/components/magicui/typing-animation";
 
 interface TimelineEntry {
   title: string;
@@ -42,7 +43,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           我的博客记录
         </h2>
         <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
-          记录生活的点滴和成长历程。以下是我博客的时间线。
+          <TypingAnimation className="text-lg md:text-xl" duration={100}>记录生活的点滴和成长历程。以下是我博客的时间线。</TypingAnimation>
         </p>
       </div>
 

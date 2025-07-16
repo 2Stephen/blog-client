@@ -37,8 +37,8 @@ export function DockDemo() {
     <div className="fixed top-0 right-10 z-999">
       <Dock direction="middle">
 
-        <DockIcon onClick={() => window.open("https://www.github.com/2Stephen")}>
-          <Tooltip text="Visit my GitHub">
+        <DockIcon onClick={() => window.open("https://github.com/2Stephen/blog-client")}>
+          <Tooltip text="View GitHub Repository">
             <Icons.gitHub className="size-6" />
           </Tooltip>
         </DockIcon>
@@ -49,8 +49,10 @@ export function DockDemo() {
         </DockIcon>
 
 
-        <DockIcon><Tooltip text="View my Blog">
-          <Icons.notion className="size-6" /> </Tooltip>
+        <DockIcon onClick={() => (window.location.href = "https://www.setrain.top/blog")}>
+          <Tooltip text="View my Blog">
+            <Icons.notion className="size-6" />
+          </Tooltip>
         </DockIcon>
 
 

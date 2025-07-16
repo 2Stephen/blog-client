@@ -69,7 +69,7 @@ const Home = () => {
             </CardContainer>
             <div className="z-10 flex justify-center items-center h-[40rem] flex-col px-4">
                 <p className="text-neutral-500 dark:text-neutral-400 text-xl md:text-3xl max-w-3xl mx-auto mb-10">
-                    <LinkPreview url="https://www.setrain.top" className="font-bold">
+                    <LinkPreview url="https://www.setrain.top/resume" className="font-bold">
                         我的简历
                     </LinkPreview>
     
