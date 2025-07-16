@@ -4,7 +4,8 @@ import { TypingAnimation } from "@/components/magicui/typing-animation";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import { motion } from "motion/react";
 import { LinkPreview } from "@/components/ui/link-preview";
-
+import { BorderBeam } from "@/components/magicui/border-beam";
+import { CoolMode } from "@/components/magicui/cool-mode";
 const Home = () => {
     return (
         <>
@@ -21,9 +22,9 @@ const Home = () => {
                         translateZ="60"
                         className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
                     >
-                        Hover over this card to unleash the power of CSS perspective
+                        欢迎来到我的个人博客！这里记录了我的学习和生活点滴，希望能给你带来一些启发和帮助。
                     </CardItem>
-                    <CardItem translateZ="100" className="w-full mt-4">
+                    <CardItem translateZ="100" className="w-full mt-4" >
                         <img
                             src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             height="1000"
@@ -36,27 +37,43 @@ const Home = () => {
                         <CardItem
                             translateZ={20}
                             as="a"
-                            href="https://twitter.com/mannupaaji"
-                            target="__blank"
+                            href="/blog"
                             className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
                         >
-                            Try now →
+                            进入博客 →
                         </CardItem>
-                        <CardItem
-                            translateZ={20}
-                            as="button"
-                            className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
-                        >
-                            Sign up
-                        </CardItem>
+                        <CoolMode>
+                            <CardItem
+                                translateZ={20}
+                                as="button"
+                                className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                            >
+                                查看简历
+                            </CardItem>
+                        </CoolMode>
                     </div>
+                    <BorderBeam
+                        duration={6}
+                        size={400}
+                        className="from-transparent via-red-500 to-transparent"
+                    />
+                    <BorderBeam
+                        duration={6}
+                        delay={3}
+                        size={400}
+                        borderWidth={2}
+                        className="from-transparent via-blue-500 to-transparent"
+                    />
                 </CardBody>
+
             </CardContainer>
             <div className="z-10 flex justify-center items-center h-[40rem] flex-col px-4">
                 <p className="text-neutral-500 dark:text-neutral-400 text-xl md:text-3xl max-w-3xl mx-auto mb-10">
-                    <LinkPreview url="https://tailwindcss.com" className="font-bold">
+                    <LinkPreview url="http://setrain.top" className="font-bold">
                         Tailwind CSS
-                    </LinkPreview>{" "}
+                    </LinkPreview>
+    
+                    {" "}
                     and{" "}
                     <LinkPreview url="https://framer.com/motion" className="font-bold">
                         Framer Motion
