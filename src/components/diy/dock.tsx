@@ -44,8 +44,10 @@ export function DockDemo() {
         </DockIcon>
 
 
-        <DockIcon> <Tooltip text="Download Resume">
-          <Icons.resume className="size-6" /></Tooltip>
+        <DockIcon onClick={() => (window.location.href = "/resume")}>
+          <Tooltip text="View Resume">
+            <Icons.resume className="size-6" />
+          </Tooltip>
         </DockIcon>
 
 

@@ -3,6 +3,7 @@ import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router'
 import Home from '@/pages/Home'
 import Blog from '@/pages/Blog'
+import Resume from '@/pages/Resume'
 import { useLenis } from "@/hooks/useLenis";
 import { Pointer } from "@/components/magicui/pointer";
 import { motion } from "motion/react";
@@ -67,6 +68,7 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/resume" element={<Resume />} />
           {/* 其他路由可以在这里添加 */}
         </Routes>
       </BrowserRouter>
