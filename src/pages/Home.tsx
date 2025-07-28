@@ -1,8 +1,6 @@
 "use client";
-import React from "react";
 import { TypingAnimation } from "@/components/magicui/typing-animation";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
-import { motion } from "motion/react";
 import { LinkPreview } from "@/components/ui/link-preview";
 import { BorderBeam } from "@/components/magicui/border-beam";
 import { CoolMode } from "@/components/magicui/cool-mode";
@@ -46,6 +44,10 @@ const Home = () => {
                             <CardItem
                                 translateZ={20}
                                 as="button"
+                                onClick={() => {
+                                    // 当前页面跳转到resume路由
+                                    window.location.href = "/resume";
+                                }}
                                 className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
                             >
                                 查看简历

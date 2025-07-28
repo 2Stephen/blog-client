@@ -1,48 +1,63 @@
 import { useMemo } from "react";
 import { Timeline } from "@/components/ui/timeline";
 
+// interface data
+interface DataItem {
+    title: string;
+    content: {
+        headline: string;
+        description?: string;
+        images?: string[];
+        details?: string[];
+        url?: string;
+    };
+}
 
 const Blog = () => {
-    const data = [
-        {
-          title: "2024",
-          content: {
-            headline: "Built and launched Aceternity UI and Aceternity UI Pro from scratch",
-            description: "Here are some of the templates I created for Aceternity UI Pro",
-            images: [
-              "https://assets.aceternity.com/templates/startup-1.webp",
-              "https://assets.aceternity.com/templates/startup-2.webp",
-            ],
-          }
-        },
-        {
-          title: "Early 2023",
-          content: {
-            headline: "I usually run out of copy, but when I see content this big, I try to integrate lorem ipsum.",
-            description: "Lorem ipsum is for people who are too lazy to write copy. But we are not. Here are some more example of beautiful designs I built.",
-            images: [
-              "https://assets.aceternity.com/pro/hero-sections.png",
-              "https://assets.aceternity.com/features-section.png",
-              "https://assets.aceternity.com/pro/bento-grids.png",
-              "https://assets.aceternity.com/cards.png",
-            ],
-          }
-        },
-        {
-          title: "Changelog",
-          content: {
-            headline: "Deployed 5 new components on Aceternity today",
-            description: "Here are the new components I added to Aceternity UI Pro",
-            images: [
-              "https://assets.aceternity.com/pro/hero-sections.png",
-              "https://assets.aceternity.com/features-section.png",
-              "https://assets.aceternity.com/pro/bento-grids.png",
-              "https://assets.aceternity.com/cards.png",
-            ],
-          }
-        },
-      ];
+    const data: DataItem[] = [];
+    // 示例数据
+    data.push(
+      {
+        title: "2025",
+        content: {
+          headline: "后端服务正在开发中，谢谢！",
+          description: "Here are some of the templates I placed here",
+          images: [
+            "https://assets.aceternity.com/templates/startup-1.webp",
+            "https://assets.aceternity.com/templates/startup-2.webp",
+          ],
+        }
+      },
+      {
+        title: "Early 2023",
+        content: {
+          headline: "I usually run out of copy, but when I see content this big, I try to integrate lorem ipsum.",
+          description: "Lorem ipsum is for people who are too lazy to write copy. But we are not. Here are some more example of beautiful designs I built.",
+          images: [
+            "https://assets.aceternity.com/pro/hero-sections.png",
+            "https://assets.aceternity.com/features-section.png",
+            "https://assets.aceternity.com/pro/bento-grids.png",
+            "https://assets.aceternity.com/cards.png",
+          ],
+        }
+      },
+      {
+        title: "Changelog",
+        content: {
+          headline: "Test for timeline",
+          description: "test for timeline",
+          images: [
+            "https://assets.aceternity.com/pro/hero-sections.png",
+            "https://assets.aceternity.com/features-section.png",
+            "https://assets.aceternity.com/pro/bento-grids.png",
+            "https://assets.aceternity.com/cards.png",
+          ],
+        }
+      },
+    );
 
+
+    
     // 动态生成 xmlData 格式
     const xmlData = useMemo(() => {
         return data.map((item) => ({
